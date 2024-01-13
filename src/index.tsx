@@ -13,7 +13,7 @@ const TfModule = isTurboModuleEnabled
   ? require('./NativeTf').default
   : NativeModules.Tf;
 
-const Tf = TfModule
+export const Tf = TfModule
   ? TfModule
   : new Proxy(
       {},
@@ -23,7 +23,3 @@ const Tf = TfModule
         },
       }
     );
-
-export function multiply(a: number, b: number): Promise<number> {
-  return Tf.multiply(a, b);
-}
