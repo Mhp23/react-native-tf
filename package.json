@@ -1,7 +1,7 @@
 {
   "name": "react-native-tf",
   "version": "0.1.0",
-  "description": " ",
+  "description": "Tensorflow lite for React Native",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/src/index.d.ts",
